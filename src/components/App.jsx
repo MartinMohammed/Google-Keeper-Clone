@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Clock from "./Clock";
 
 // import the components we need
 import Header from "./Header";
@@ -59,7 +60,7 @@ function App() {
         to a HTML element such as div in Note
          */}
       <Header />
-
+      <Clock/>
       <CreateArea onAdd={addNote} />
       {noteArray.map((noteItem, index) => {
         return (
